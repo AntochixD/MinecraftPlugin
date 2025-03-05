@@ -1,0 +1,49 @@
+# Configurações do plugin GeoCraft
+
+# Configurações de economia
+economy-start-balance: 0.0  # Saldo inicial de novos jogadores
+claim-block-cost: 10.0      # Custo por bloco para reivindicar terrenos (dólares)
+city-block-cost: 10.0       # Custo por bloco para criar cidades (dólares)
+nation-create-cost: 1000.0  # Custo para criar uma nação (dólares)
+shop-tax-rate: 10.0         # Taxa de imposto das lojas (em %, ex.: 10% = 10.0)
+war-initial-cost: 5000.0    # Custo inicial para declarar guerra (dólares)
+war-maintenance-cost: 1000.0 # Custo por hora de manutenção de guerra (dólares)
+alliance-create-cost: 2000.0 # Custo para criar uma aliança (dólares)
+alliance-war-cost-reduction: 0.25 # Redução de custo de guerra para nações aliadas (0.25 = 25%)
+bank-tax-per-day: 1.0
+bank-tax-per-transaction: 2.0
+
+# Configurações de tamanhos mínimos
+city-min-size: 20          # Tamanho mínimo de cidades (blocos, 20x20)
+conquest-min-size: 5       # Tamanho mínimo de conquistas (blocos, 5x5)
+
+# Configurações de timers
+nation-invite-expire: 5    # Tempo para expiração de convites de nação (minutos)
+alliance-invite-expire: 5  # Tempo para expiração de convites de aliança (minutos)
+conquest-duration: 5       # Duração da conquista em minutos
+map-update-interval: 5     # Intervalo de atualização dos mapas dinâmicos (minutos)
+
+# Configurações de partículas
+particle-color-war: BARRIER  # Tipo de partícula para áreas de guerra (ex.: BARRIER, FLAME)
+particle-color-claim: BARRIER # Tipo de partícula para claims (ex.: BARRIER, HAPPY_VILLAGER)
+
+economy-start-balance: 100.0
+online-reward-amount: 30.0
+mob-kill-reward:
+  default: 1.0
+  zombie: 2.0
+  skeleton: 2.0
+  creeper: 3.0
+  spider: 2.0
+  enderman: 5.0
+bank-tax-per-transaction: 2.0
+alliance-create-cost: 2000.0 # Custo em dólares para criar uma aliança
+alliance-invite-expire: 5 # Tempo de expiração de convites de aliança em minutos
+truce-proposal-cost: 500.0 # Custo em dólares para propor uma trégua
+quests:
+# Cores das nações e alianças (hexadecimal, ex.: #FF0000 para vermelho)
+nation-colors:
+  Bardonia: "#00FF00"  # Verde para Bardonia (exemplo)
+  OutraNacao: "#FF0000" # Vermelho para OutraNacao (exemplo)
+alliance-colors:
+  AliancaVerde: "#FFFF00" # Amarelo para AliancaVerde (exemplo)

@@ -1,0 +1,65 @@
+name: MeuPrimeiroPlugin
+version: 1.0-SNAPSHOT
+main: me.seunome.MeuPrimeiroPlugin
+api-version: 1.21
+prefix: GeoCraft
+load: POSTWORLD
+authors: [SeuNome]
+depend: [Vault]
+description: Um plugin de geopolítica para Minecraft com nações, guerras, economia e mais!
+website: https://seuwebsite.com
+
+permissions:
+  geocraft.nation.member:
+    description: Permite funcionalidades básicas de nação/membro
+    default: false
+  geocraft.nation.leader:
+    description: Permite funcionalidades de líder de nação
+    default: false
+  geocraft.nation.cities:
+    description: Permite acessar o menu de cidades
+    default: false
+  geocraft.mod:
+    description: Permite funcionalidades de moderador
+    default: false
+  geocraft.admin:
+    description: Permite funcionalidades administrativas
+    default: op
+  geocraft.owner:
+    description: Permite todas as funcionalidades (dono)
+    default: false
+
+commands:
+  money:
+    description: Gerencia dinheiro (dólares)
+    usage: /<command> [balance|give|top|history]
+  pay:
+    description: Transfere dinheiro para outro jogador
+    usage: /<command> <jogador> <quantia>
+  bank:
+    description: Gerencia bancos e tesouros nacionais
+    usage: /<command> [deposit|withdraw|nation <deposit/withdraw> <quantia>]
+  claim:
+    description: Gerencia claims de nações
+    usage: /<command> [create|delete|delete confirm]
+  house:
+    description: Gerencia casas dentro de claims
+    usage: /<command> create
+  nation:
+    description: Gerencia nações, cidades, alianças, guerras e tréguas
+    usage: /<command> [create|invite|kick|city|cities|ally|war|surrender|surrender accept|show|truce|truce accept|top]
+  conquer:
+    description: Inicia a conquista de territórios em guerras
+    usage: /<command> <nome_da_nação>
+  shop:
+    description: Gerencia lojas (ChestShop)
+    usage: /<command> history
+  quest:
+    description: Gerencia missões diárias
+    usage: /<command> [list|complete]
+  map:
+    description: Mostra mapa dinâmico de territórios
+    usage: /<command>
+  ranking:
+    description: Mostra rankings de nações e jogadores
+    usage: /<command>
